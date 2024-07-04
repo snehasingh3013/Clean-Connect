@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Schedule Test Case</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.png">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+body {
+  background-image:linear-gradient(green,rgb(158, 233, 161),green);
+}
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #ffffff;
+
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #000000;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #000000;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f4ddb5;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #aeffc0;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #ffd4c4;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #e1c8f9;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #f8c8e5;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #b7b6ff;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+body {
+  background-image: linear-gradient(green,rgb(199, 243, 161),green);
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes particle-animation-1 {
+  100% {
+    transform: translate3d(60vw, 17vh, 29px);
+  }
+}
+
+@keyframes particle-animation-1 {
+  100% {
+    transform: translate3d(60vw, 17vh, 29px);
+  }
+}
+.particle:nth-child(1) {
+  -webkit-animation: particle-animation-1 60s infinite;
+          animation: particle-animation-1 60s infinite;
+  opacity: 0.64;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  transform: translate3d(86vw, 76vh, 20px);
+  background: #263bd9;
+}
+
+@-webkit-keyframes particle-animation-2 {
+  100% {
+    transform: translate3d(19vw, 41vh, 85px);
+  }
+}
+
+@keyframes particle-animation-2 {
+  100% {
+    transform: translate3d(19vw, 41vh, 85px);
+  }
+}
+.particle:nth-child(2) {
+  -webkit-animation: particle-animation-2 60s infinite;
+          animation: particle-animation-2 60s infinite;
+  opacity: 0.13;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  transform: translate3d(66vw, 81vh, 98px);
+  background: #26a9d9;
+}
+
+@-webkit-keyframes particle-animation-3 {
+  100% {
+    transform: translate3d(85vw, 26vh, 82px);
+  }
+}
+
+@keyframes particle-animation-3 {
+  100% {
+    transform: translate3d(85vw, 26vh, 82px);
+  }
+}
+.particle:nth-child(3) {
+  -webkit-animation: particle-animation-3 60s infinite;
+          animation: particle-animation-3 60s infinite;
+  opacity: 0.16;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  transform: translate3d(83vw, 61vh, 98px);
+  background: #d926d0;
+}
+
+@-webkit-keyframes particle-animation-4 {
+  100% {
+    transform: translate3d(31vw, 15vh, 100px);
+  }
+}
+
+@keyframes particle-animation-4 {
+  100% {
+    transform: translate3d(31vw, 15vh, 100px);
+  }
+}
+.particle:nth-child(4) {
+  -webkit-animation: particle-animation-4 60s infinite;
+          animation: particle-animation-4 60s infinite;
+  opacity: 0.84;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  transform: translate3d(42vw, 29vh, 34px);
+  background: #26d971;
+}
+
+@-webkit-keyframes particle-animation-5 {
+  100% {
+    transform: translate3d(74vw, 19vh, 74px);
+  }
+}
+
+@keyframes particle-animation-5 {
+  100% {
+    transform: translate3d(74vw, 19vh, 74px);
+  }
+}
+.particle:nth-child(5) {
+  -webkit-animation: particle-animation-5 60s infinite;
+          animation: particle-animation-5 60s infinite;
+  opacity: 0.89;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  transform: translate3d(74vw, 58vh, 19px);
+  background: #26d9c1;
+}
+
+@-webkit-keyframes particle-animation-6 {
+  100% {
+    transform: translate3d(79vw, 77vh, 58px);
+  }
+}
+
+@keyframes particle-animation-6 {
+  100% {
+    transform: translate3d(79vw, 77vh, 58px);
+  }
+}
+.particle:nth-child(6) {
+  -webkit-animation: particle-animation-6 60s infinite;
+          animation: particle-animation-6 60s infinite;
+  opacity: 0.94;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  transform: translate3d(32vw, 76vh, 43px);
+  background: #5cd926;
+}
+
+@-webkit-keyframes particle-animation-7 {
+  100% {
+    transform: translate3d(64vw, 30vh, 82px);
+  }
+}
+
+@keyframes particle-animation-7 {
+  100% {
+    transform: translate3d(64vw, 30vh, 82px);
+  }
+}
+.particle:nth-child(7) {
+  -webkit-animation: particle-animation-7 60s infinite;
+          animation: particle-animation-7 60s infinite;
+  opacity: 0.08;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  transform: translate3d(27vw, 84vh, 48px);
+  background: #56d926;
+}
+
+@-webkit-keyframes particle-animation-8 {
+  100% {
+    transform: translate3d(39vw, 1vh, 62px);
+  }
+}
+
+@keyframes particle-animation-8 {
+  100% {
+    transform: translate3d(39vw, 1vh, 62px);
+  }
+}
+.particle:nth-child(8) {
+  -webkit-animation: particle-animation-8 60s infinite;
+          animation: particle-animation-8 60s infinite;
+  opacity: 0.32;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  transform: translate3d(27vw, 29vh, 87px);
+  background: #9a26d9;
+}
+
+@-webkit-keyframes particle-animation-9 {
+  100% {
+    transform: translate3d(71vw, 53vh, 78px);
+  }
+}
+
+@keyframes particle-animation-9 {
+  100% {
+    transform: translate3d(71vw, 53vh, 78px);
+  }
+}
+.particle:nth-child(9) {
+  -webkit-animation: particle-animation-9 60s infinite;
+          animation: particle-animation-9 60s infinite;
+  opacity: 0.74;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  transform: translate3d(38vw, 20vh, 89px);
+  background: #26d95c;
+}
+
+@-webkit-keyframes particle-animation-10 {
+  100% {
+    transform: translate3d(34vw, 44vh, 39px);
+  }
+}
+
+@keyframes particle-animation-10 {
+  100% {
+    transform: translate3d(34vw, 44vh, 39px);
+  }
+}
+.particle:nth-child(10) {
+  -webkit-animation: particle-animation-10 60s infinite;
+          animation: particle-animation-10 60s infinite;
+  opacity: 0.81;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  transform: translate3d(16vw, 11vh, 27px);
+  background: #d92644;
+}
+
+@-webkit-keyframes particle-animation-11 {
+  100% {
+    transform: translate3d(51vw, 39vh, 59px);
+  }
+}
+
+@keyframes particle-animation-11 {
+  100% {
+    transform: translate3d(51vw, 39vh, 59px);
+  }
+}
+.particle:nth-child(11) {
+  -webkit-animation: particle-animation-11 60s infinite;
+          animation: particle-animation-11 60s infinite;
+  opacity: 0.56;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  transform: translate3d(43vw, 31vh, 47px);
+  background: #264ad9;
+}
+
+@-webkit-keyframes particle-animation-12 {
+  100% {
+    transform: translate3d(49vw, 47vh, 55px);
+  }
+}
+
+@keyframes particle-animation-12 {
+  100% {
+    transform: translate3d(49vw, 47vh, 55px);
+  }
+}
+.particle:nth-child(12) {
+  -webkit-animation: particle-animation-12 60s infinite;
+          animation: particle-animation-12 60s infinite;
+  opacity: 0.34;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  transform: translate3d(13vw, 48vh, 93px);
+  background: #d92691;
+}
+
+@-webkit-keyframes particle-animation-13 {
+  100% {
+    transform: translate3d(46vw, 19vh, 15px);
+  }
+}
+
+@keyframes particle-animation-13 {
+  100% {
+    transform: translate3d(46vw, 19vh, 15px);
+  }
+}
+.particle:nth-child(13) {
+  -webkit-animation: particle-animation-13 60s infinite;
+          animation: particle-animation-13 60s infinite;
+  opacity: 0.84;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
+  transform: translate3d(2vw, 61vh, 100px);
+  background: #b526d9;
+}
+
+@-webkit-keyframes particle-animation-14 {
+  100% {
+    transform: translate3d(36vw, 7vh, 95px);
+  }
+}
+
+@keyframes particle-animation-14 {
+  100% {
+    transform: translate3d(36vw, 7vh, 95px);
+  }
+}
+.particle:nth-child(14) {
+  -webkit-animation: particle-animation-14 60s infinite;
+          animation: particle-animation-14 60s infinite;
+  opacity: 0.48;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -2.8s;
+          animation-delay: -2.8s;
+  transform: translate3d(88vw, 39vh, 51px);
+  background: #2c26d9;
+}
+
+@-webkit-keyframes particle-animation-15 {
+  100% {
+    transform: translate3d(3vw, 39vh, 80px);
+  }
+}
+
+@keyframes particle-animation-15 {
+  100% {
+    transform: translate3d(3vw, 39vh, 80px);
+  }
+}
+.particle:nth-child(15) {
+  -webkit-animation: particle-animation-15 60s infinite;
+          animation: particle-animation-15 60s infinite;
+  opacity: 0.91;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  transform: translate3d(11vw, 89vh, 63px);
+  background: #8526d9;
+}
+
+@-webkit-keyframes particle-animation-16 {
+  100% {
+    transform: translate3d(4vw, 12vh, 14px);
+  }
+}
+
+@keyframes particle-animation-16 {
+  100% {
+    transform: translate3d(4vw, 12vh, 14px);
+  }
+}
+.particle:nth-child(16) {
+  -webkit-animation: particle-animation-16 60s infinite;
+          animation: particle-animation-16 60s infinite;
+  opacity: 0.12;
+  height: 6px;
+  width: 6px;
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+  transform: translate3d(71vw, 12vh, 38px);
+  background: #d92656;
+}
+
+@-webkit-keyframes particle-animation-17 {
+  100% {
+    transform: translate3d(82vw, 3vh, 18px);
+  }
+}
+
+@keyframes particle-animation-17 {
+  100% {
+    transform: translate3d(82vw, 3vh, 18px);
+  }
+}
+.particle:nth-child(17) {
+  -webkit-animation: particle-animation-17 60s infinite;
+          animation: particle-animation-17 60s infinite;
+  opacity: 0.6;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+  transform: translate3d(48vw, 70vh, 51px);
+  background: #d95c26;
+}
+
+@-webkit-keyframes particle-animation-18 {
+  100% {
+    transform: translate3d(14vw, 51vh, 25px);
+  }
+}
+
+@keyframes particle-animation-18 {
+  100% {
+    transform: translate3d(14vw, 51vh, 25px);
+  }
+}
+.particle:nth-child(18) {
+  -webkit-animation: particle-animation-18 60s infinite;
+          animation: particle-animation-18 60s infinite;
+  opacity: 0.41;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -3.6s;
+          animation-delay: -3.6s;
+  transform: translate3d(8vw, 20vh, 78px);
+  background: #d92650;
+}
+
+@-webkit-keyframes particle-animation-19 {
+  100% {
+    transform: translate3d(39vw, 50vh, 15px);
+  }
+}
+
+@keyframes particle-animation-19 {
+  100% {
+    transform: translate3d(39vw, 50vh, 15px);
+  }
+}
+.particle:nth-child(19) {
+  -webkit-animation: particle-animation-19 60s infinite;
+          animation: particle-animation-19 60s infinite;
+  opacity: 0.9;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+  transform: translate3d(88vw, 4vh, 26px);
+  background: #d9267a;
+}
+
+@-webkit-keyframes particle-animation-20 {
+  100% {
+    transform: translate3d(66vw, 61vh, 80px);
+  }
+}
+
+@keyframes particle-animation-20 {
+  100% {
+    transform: translate3d(66vw, 61vh, 80px);
+  }
+}
+.particle:nth-child(20) {
+  -webkit-animation: particle-animation-20 60s infinite;
+          animation: particle-animation-20 60s infinite;
+  opacity: 0.07;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  transform: translate3d(46vw, 7vh, 60px);
+  background: #26d974;
+}
+
+@-webkit-keyframes particle-animation-21 {
+  100% {
+    transform: translate3d(56vw, 40vh, 49px);
+  }
+}
+
+@keyframes particle-animation-21 {
+  100% {
+    transform: translate3d(56vw, 40vh, 49px);
+  }
+}
+.particle:nth-child(21) {
+  -webkit-animation: particle-animation-21 60s infinite;
+          animation: particle-animation-21 60s infinite;
+  opacity: 0.14;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -4.2s;
+          animation-delay: -4.2s;
+  transform: translate3d(11vw, 89vh, 60px);
+  background: #26b2d9;
+}
+
+@-webkit-keyframes particle-animation-22 {
+  100% {
+    transform: translate3d(2vw, 41vh, 30px);
+  }
+}
+
+@keyframes particle-animation-22 {
+  100% {
+    transform: translate3d(2vw, 41vh, 30px);
+  }
+}
+.particle:nth-child(22) {
+  -webkit-animation: particle-animation-22 60s infinite;
+          animation: particle-animation-22 60s infinite;
+  opacity: 0.05;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -4.4s;
+          animation-delay: -4.4s;
+  transform: translate3d(39vw, 30vh, 66px);
+  background: #2638d9;
+}
+
+@-webkit-keyframes particle-animation-23 {
+  100% {
+    transform: translate3d(13vw, 29vh, 77px);
+  }
+}
+
+@keyframes particle-animation-23 {
+  100% {
+    transform: translate3d(13vw, 29vh, 77px);
+  }
+}
+.particle:nth-child(23) {
+  -webkit-animation: particle-animation-23 60s infinite;
+          animation: particle-animation-23 60s infinite;
+  opacity: 0.75;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+  transform: translate3d(9vw, 54vh, 20px);
+  background: #d926a6;
+}
+
+@-webkit-keyframes particle-animation-24 {
+  100% {
+    transform: translate3d(43vw, 24vh, 48px);
+  }
+}
+
+@keyframes particle-animation-24 {
+  100% {
+    transform: translate3d(43vw, 24vh, 48px);
+  }
+}
+.particle:nth-child(24) {
+  -webkit-animation: particle-animation-24 60s infinite;
+          animation: particle-animation-24 60s infinite;
+  opacity: 0.68;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+  transform: translate3d(46vw, 22vh, 46px);
+  background: #26d9ca;
+}
+
+@-webkit-keyframes particle-animation-25 {
+  100% {
+    transform: translate3d(7vw, 58vh, 32px);
+  }
+}
+
+@keyframes particle-animation-25 {
+  100% {
+    transform: translate3d(7vw, 58vh, 32px);
+  }
+}
+.particle:nth-child(25) {
+  -webkit-animation: particle-animation-25 60s infinite;
+          animation: particle-animation-25 60s infinite;
+  opacity: 0.61;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  transform: translate3d(6vw, 64vh, 37px);
+  background: #b2d926;
+}
+
+@-webkit-keyframes particle-animation-26 {
+  100% {
+    transform: translate3d(41vw, 45vh, 15px);
+  }
+}
+
+@keyframes particle-animation-26 {
+  100% {
+    transform: translate3d(41vw, 45vh, 15px);
+  }
+}
+.particle:nth-child(26) {
+  -webkit-animation: particle-animation-26 60s infinite;
+          animation: particle-animation-26 60s infinite;
+  opacity: 0.06;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+  transform: translate3d(4vw, 44vh, 34px);
+  background: #26d9ac;
+}
+
+@-webkit-keyframes particle-animation-27 {
+  100% {
+    transform: translate3d(77vw, 53vh, 43px);
+  }
+}
+
+@keyframes particle-animation-27 {
+  100% {
+    transform: translate3d(77vw, 53vh, 43px);
+  }
+}
+.particle:nth-child(27) {
+  -webkit-animation: particle-animation-27 60s infinite;
+          animation: particle-animation-27 60s infinite;
+  opacity: 0.41;
+  height: 9px;
+  width: 9px;
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+  transform: translate3d(36vw, 30vh, 15px);
+  background: #acd926;
+}
+
+@-webkit-keyframes particle-animation-28 {
+  100% {
+    transform: translate3d(45vw, 52vh, 94px);
+  }
+}
+
+@keyframes particle-animation-28 {
+  100% {
+    transform: translate3d(45vw, 52vh, 94px);
+  }
+}
+.particle:nth-child(28) {
+  -webkit-animation: particle-animation-28 60s infinite;
+          animation: particle-animation-28 60s infinite;
+  opacity: 0.06;
+  height: 7px;
+  width: 7px;
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+  transform: translate3d(67vw, 33vh, 88px);
+  background: #d92697;
+}
+
+@-webkit-keyframes particle-animation-29 {
+  100% {
+    transform: translate3d(30vw, 80vh, 76px);
+  }
+}
+
+@keyframes particle-animation-29 {
+  100% {
+    transform: translate3d(30vw, 80vh, 76px);
+  }
+}
+.particle:nth-child(29) {
+  -webkit-animation: particle-animation-29 60s infinite;
+          animation: particle-animation-29 60s infinite;
+  opacity: 0.36;
+  height: 8px;
+  width: 8px;
+  -webkit-animation-delay: -5.8s;
+          animation-delay: -5.8s;
+  transform: translate3d(43vw, 45vh, 97px);
+  background: #d9cd26;
+}
+
+@-webkit-keyframes particle-animation-30 {
+  100% {
+    transform: translate3d(32vw, 59vh, 21px);
+  }
+}
+
+@keyframes particle-animation-30 {
+  100% {
+    transform: translate3d(32vw, 59vh, 21px);
+  }
+}
+.particle:nth-child(30) {
+  -webkit-animation: particle-animation-30 60s infinite;
+          animation: particle-animation-30 60s infinite;
+  opacity: 0.47;
+  height: 10px;
+  width: 10px;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+  transform: translate3d(30vw, 84vh, 56px);
+  background: #9dd926;
+}
+</style>
+<body>
+  <!-- Inspired by: https://codepen.io/natewiley/pen/Ciwyn -->
+
+<div id="particle-container">
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+</div>
+    <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                22  March,2023
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Time:
+                <span class="ag-courses-item_date">
+                  10:00AM approx
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+              25 March,2023
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Time:
+                <span class="ag-courses-item_date">
+                  09:00AM Approx
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                29 March,2023
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Time:
+                <span class="ag-courses-item_date">
+                 09:00AM Approx
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                01 April,2023
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Time:
+                <span class="ag-courses-item_date">
+                  10:00AM Approx
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                04 April,2023
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Time:
+                <span class="ag-courses-item_date">
+                  11:00AM Approx
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                07 April,2023
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg">
+              </div>
+              <div class="ag-courses-item_title">
+                11 April,2023
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                14 April,2023
+              </div>
+      
+              
+            </a>
+          </div>
+      
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<html>
+</html>
+<style>
+   * {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, white, 5%, #7ebc12, 50%, #7ebc12);
+  position: absolute;
+}
+.wrapper h1 {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 888;
+  text-transform: uppercase;
+}
+.wrapper div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+ 
+  
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #7ebc12;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  margin: 4rem;
+}
+
+.container .box:hover .imgBox {
+  transform: translate(-3.5rem, -3.5rem);
+}
+
+.container .box:hover .content {
+  transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content h2 {
+  display: block;
+  font-size: 2rem;
+  color: #111;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .container .box:hover .content {
+    transform: translate(0, 3.5rem);
+  }
+  .container .box:hover .imgBox {
+    transform: translate(0, -3.5rem);
+  }
+}
+/*# sourceMappingURL=main.css.map */ 
+</style>
+<body>
+      <div class="wrapper">
+      <h1> Past Winners </h1>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+  <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Karan Singh</br>
+                <span></span></h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="https://image.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Dolly Seth</br>
+                <span></span></h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Aakash Agrawal</br>
+                <span></span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+ 

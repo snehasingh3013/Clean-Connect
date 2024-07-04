@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Clean the Trash</title>
+	<link rel="stylesheet" href="css/style.css"> 
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png">
+</head>
+<body class="game">
+	<div class="score-block">
+		<p>You collected <span class='score'>0</span> Trash Items</p>
+	</div>
+	<div class="total-shadow">
+		<div class="total-block">
+			<div class="total-wrapper win">
+				 <h4>Congratulations!</h4>
+				 <img src="img/happy-trash.png" alt="winner">
+				 <h4>You collected all 100 trash items.</h4>
+				 <p>You are a champion!</p>
+			</div>
+			<div class="total-wrapper lose">
+				 <h4>Sorry!</h4>
+				 <img src="img/sad-trash.png" alt="loser" class='loser'>
+				 <h4>You collected <span class='score'>0</span> Trash Items.</h4>
+				 <p>Play again?</p>
+				 <button class='restart'>Yes</button>
+				 <button class="cancel">No</button>
+			</div>
+		</div>
+	</div>
+	<div class="start-game-window">
+		<h2>Are you ready to Start?</h2>
+		<button class='start-game-button'>START</button>
+	</div>
+	<audio src="sounds/bg-music.mp3" class='bg-music' loop></audio>
+	<script src='js/script.js'></script>
+</body>
+</html>

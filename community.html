@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Community</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover{
+            cursor: pointer;
+        }
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:8vh;
+    
+}
+
+.context h1{
+    text-align:center;
+    font-size:xx-large;
+    color: #fff;
+    font-size: 50px;
+}
+
+.area{
+    background: #7EBC12;  
+    background: -webkit-linear-gradient(to left, #fafafa, #4e54c8);  
+    width: 100%;
+    height:max-content;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+        </style>
+    </head>
+ 
+</html>
+    <style>
+        body{
+            background:rgba(152, 216, 112, 0.96);
+            height:120vh;
+            
+        }
+        h1{
+            /* margin-top: 60px; */
+            font-size: 50px;
+        }
+             
+        .card{
+            background:white;
+            padding:0 10px;
+            border-radius: 20px;
+            border:0;
+        }
+        .card-img-top{
+            margin:15px auto 0;
+            box-shadow: 0 8px 10px -1px rgb(185, 243, 186);
+            width:300px;
+            height:150px;
+        }
+        .title {
+            font-size: 50px;
+            margin-top: 60px;
+            color:rgb(13, 12, 12);
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 200;
+        }
+        p{
+            font-size: 14px;
+            color:rgb(0, 0, 0);
+            padding-bottom: 15px;
+        }
+        
+        .carousel-indicators{
+           left:0;
+           top:auto;
+           bottom:-60px; 
+        }
+        
+        a:hover{
+            cursor: pointer;
+        }
+
+        
+
+    </style>
+  </head>
+  <body>
+    
+  <!-- Navbar & Hero Start -->
+        <!-- <div class="container-xxl position-relative p-0"> -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1>    <img class="logo" src="img/logo.png" alt="Logo"> </h1>
+    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="location.html" class="nav-item nav-link">Location</a>
+                        <a href="future.html" class="nav-item nav-link">Events</a>
+                        <!-- <a href="" class="nav-item nav-link">Admin</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                
+    
+                                <a href="collection.html" class="dropdown-item ">Collection Schedule</a>
+                                <a href="recyclable.html" class="dropdown-item">Recyclable</a>
+                                <a href="complain.html" class="dropdown-item">Complain</a>
+                                <a href="rewards.html" class="dropdown-item">Rewards and incentive</a>
+                                <a href="community.html" class="dropdown-item active ">Community</a>
+                                <a href="edu.html" class="dropdown-item">Education</a>
+                                <a href="game.html" class="dropdown-item">Games</a>
+                                <a href="feedback.html" class="dropdown-item">Feedback</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+    
+                                
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                    <!-- <a href="" class="btn btn-secondary py-2 px-4 ms-3">Register</a> -->
+                </div>
+            </nav>
+    
+            <!-- <div class="container-xxl py-5 bg-primary hero-header mb-5"> -->
+                <!-- <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start"> -->
+                            <!-- <h1 class="display-4 text-black animated slideInLeft"> Community</h1> -->
+                            <!-- <h3>Towards Bettter Future</h3> -->
+                            <!-- <nav aria-label="breadcrumb"> -->
+                                <!-- <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Domain</li>
+                                </ol> -->
+                            <!-- </nav>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+    
+    
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+    <div class="com_container">
+        <div class="title">
+            <h1>COMMUNITIES</h1>
+            <h3>Towards Bettter Future</h3>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4 mb-3" style="float:left" >
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/e waste.jpg" alt="">
+                            <div class="card-body">
+                                <h3>E-Waste Management Community</h3>
+                                <p class="card-text">Focuses on the proper disposal and management of electronic waste to prevent environmental and health hazards. </p>
+                                <a class="join" href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/food comm.png" alt="">
+                            <div class="card-body">
+                                <h3>Food Waste Reduction Community                      </h3>
+                                <p class="card-text">focuses on reducing food waste by promoting food recovery, redistribution, and composting. Do join us in this social campaign</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/packaging.png" alt="">
+                            <div class="card-body">
+                                <h3>Sustainable Packaging Community -</h3>
+                                <p class="card-text">Focuses on promoting sustainable and eco-friendly packaging materials and practices to reduce waste generation and environmental impact.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/recycle comm.png" alt="">
+                            <div class="card-body">
+                                <h3>Community Recycling Center</h3>
+                                <p class="card-text">Focuses on providing a centralized location for the community to recycle a wide range of materials, including paper, plastic, glass, and electronics.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/Audit.png" alt="">
+                            <div class="card-body">
+                                <h3>Waste Audit Community                 </h3>
+                                <p class="card-text">focuses on conducting waste audits to analyze the amount and types of waste generated in a specific location, and to identify opportunities for waste reduction and recycling. Do join us in this social campaign.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/analyzing comm.png" alt="">
+                            <div class="card-body">
+                                <h3>Smart City Waste Management Community </h3>
+                                <p class="card-text">focuses on the use of technology and data analytics to optimize waste collection, transportation, and disposal in urban areas.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/no to plastic.png" alt="">
+                            <div class="card-body">
+                                <h3>Plastic-Free Community</h3>
+                                <p class="card-text"> focuses on reducing the use of single-use plastics and promoting plastic-free alternatives to reduce plastic waste.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/green clean.png" alt="">
+                            <div class="card-body">
+                                <h3>Green Cleaning Community            </h3>
+                                <p class="card-text"> focuses on promoting eco-friendly cleaning practices and products to reduce the amount of hazardous waste generated from cleaning activities.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3" style="float:left">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/zero waste.png" alt="">
+                            <div class="card-body">
+                                <h3>Zero Waste Community                </h3>
+                                <p class="card-text">focuses on promoting the goal of zero waste, which involves reducing waste generation, increasing recycling, and composting.</p>
+                                <a href="#">JOIN US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<div class="area" >
+    
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+    <Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+  </body>
+</html>

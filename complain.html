@@ -1,0 +1,557 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CleanConnect</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  <style>
+body {background-color:  #7EBC12;}
+body {
+  background: #7ebc12;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+} 
+
+ * {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
+body {
+    min-height: 100%;
+    background-color: #7ebc12;
+}
+h1 {
+    letter-spacing: -1px;
+}
+a {
+  color: #5469d4;
+  text-decoration: unset;
+}
+.login-root {
+    background : #7ebc12;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.loginbackground {
+    min-height: 692px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+.flex-flex {
+    display: flex;
+}
+.align-center {
+  align-items: center; 
+}
+.center-center {
+  align-items: center;
+  justify-content: center;
+}
+.box-root {
+    box-sizing: border-box;
+}
+.flex-direction--column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+/* .loginbackground-gridContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+    grid-template-columns:[start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
+    -ms-grid-rows:[top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+    grid-template-rows:[top] 1fr [top-gutter] repeat(12,64px) [bottom-gutter] 1fr [bottom];
+    justify-content:center;
+    margin:0 -2%;
+    transform: rotate(-12deg) skew(-12deg);
+} */
+.box-divider--light-all-2 {
+    box-shadow: inset 0 0 0 2px #e3e8ee;
+}
+.box-background-- {
+    background-color: #7ebc12;
+}
+.box-background--white {
+  background-color: #7ebc12; 
+}
+.box-background--blue800 {
+    background-color: #7ebc12;
+}
+.box-background--gray100 {
+    background-color: white;
+}
+.box-background--cyan200 {
+    background-color: #7ebc12;
+}
+.padding-top--64 {
+  padding-top: 64px;
+}
+.padding-top--24 {
+  padding-top: 24px;
+}
+.padding-top--48 {
+  padding-top: 48px;
+}
+.padding-bottom--24 {
+  padding-bottom: 24px;
+}
+.padding-horizontal--48 {
+  padding: 48px;
+}
+.padding-bottom--15 {
+  padding-bottom: 15px;
+}
+
+
+.flex-justifyContent--center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.formbg {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 448px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+span {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a1f36;
+}
+label {
+    margin-bottom: 10px;
+}
+.reset-pass a,label {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+.reset-pass > a {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.grid--50-50 {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    align-items: center;
+}
+
+.field input {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: #7ebc12;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+    
+.email{
+    padding-top: 20px;
+}
+    
+.message{
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #7ebc12;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                rgb(84, 105, 212) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+    
+.para{
+    padding-top: 20px;
+    font-size: 13px;
+}
+.field-checkbox input {
+    width: 60px;
+    height: 55px;
+    margin-right: 15px; 
+    box-shadow: unset;
+    min-height: unset;
+}
+.field-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+a.ssolink {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.footer-link span {
+    font-size: 14px;
+    text-align: center;
+}
+.listing a {
+    color: #697386;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.animationRightLeft {
+  animation: animationRightLeft 2s ease-in-out infinite;
+}
+.animationLeftRight {
+  animation: animationLeftRight 2s ease-in-out infinite;
+}
+.tans3s {
+  animation: animationLeftRight 3s ease-in-out infinite;
+}
+.tans4s {
+  animation: animationLeftRight 4s ease-in-out infinite;
+}
+
+@keyframes animationLeftRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} 
+
+@keyframes animationRightLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} 
+  </style>
+<body>
+    
+  <!-- Navbar & Hero Start -->
+        <!-- <div class="container-xxl position-relative p-0"> -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1>    <img class="logo" src="img/logo.png" alt="Logo"> </h1>
+    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="location.html" class="nav-item nav-link">Location</a>
+                        <a href="future.html" class="nav-item nav-link">Events</a>
+                        <!-- <a href="" class="nav-item nav-link">Admin</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                
+    
+                                <a href="collection.html" class="dropdown-item ">Collection Schedule</a>
+                                <a href="recyclable.html" class="dropdown-item">Recyclable</a>
+                                <a href="complain.html" class="dropdown-item active">Complain</a>
+                                <a href="rewards.html" class="dropdown-item">Rewards and incentive</a>
+                                <a href="community.html" class="dropdown-item ">Community</a>
+                                <a href="edu.html" class="dropdown-item">Education</a>
+                                <a href="game.html" class="dropdown-item">Games</a>
+                                <a href="feedback.html" class="dropdown-item">Feedback</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+    
+                                
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                    <!-- <a href="" class="btn btn-secondary py-2 px-4 ms-3">Register</a> -->
+                </div>
+            </nav>
+    
+            <!-- <div class="container-xxl py-5 bg-primary hero-header mb-5"> -->
+                <!-- <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 pt-5">
+                        <div class="col-12 text-center text-lg-start"> -->
+                            <!-- <h1 class="display-4 text-black animated slideInLeft"> Schedule</h1> -->
+                            <!-- <h3>Towards Bettter Future</h3> -->
+                            <!-- <nav aria-label="breadcrumb"> -->
+                                <!-- <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Domain</li>
+                                </ol> -->
+                            <!-- </nav>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+    
+    
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background-- #7ebc12 padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div class="box-root flex-flex" style="grid-area: top / start / 6/ end;">
+            <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+            </div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+            <div class="box-root box-background--#7ebc12" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--cyan200 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1 >
+            COMPLAIN</h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <form id="stripe-login">
+                <div class="field padding-bottom--14 name">
+                  <label for="name"> <b>NAME </b> </label>
+                  <input type="name" name="name">
+                </div>
+                <div class="field padding-bottom--24 email">
+                  <div class="grid--50-50">
+                    <label for="email"> <b>EMAIL </b></label>
+                  </div>
+                  <input type="email" id="email" name="email">
+                </div>
+                 <div class="field padding-bottom--50">
+                  <div class="grid--50-50">
+                    <label for="message"> <b> YOUR COMPLAINT </b></label>
+                  </div>
+                  <input type="message" name="message" class='message'>
+                </div>
+                <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                  <label for="checkbox">
+                  </label>
+                </div>
+                <div class="field padding-bottom--24 submit">
+                  <input type="submit" name="submit" value="SUBMIT">
+                   <p class='para'>
+      Please provide all the information about your issue you can.
+    </p>
+                </div>
+                <div class="field">
+                </div>
+              </form>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class='ripple-background'>
+  <div class='circle xxlarge shade1'></div>
+  <div class='circle xlarge shade2'></div>
+  <div class='circle large shade3'></div>
+  <div class='circle mediun shade4'></div>
+  <div class='circle small shade5'></div>
+</div>
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+    <Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

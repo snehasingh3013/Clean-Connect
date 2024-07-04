@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Education</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.png">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-image: linear-gradient(green,white,white);
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+.title {
+            font-size: 30px;
+            color:rgb(13, 12, 12);
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 200;
+            margin-top: 70px;
+        }
+        p{
+            font-size: 14px;
+            color:rgb(0, 0, 0);
+            padding-bottom: 15px;
+        }
+</style>
+<style>
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, #8fdc7e 3%, #adf1e5 38%, #FFD4B2 68%, #ace782 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+</style>
+</head>
+<body>
+   <!-- Navbar & Hero Start -->
+        <!-- <div class="container-xxl position-relative p-0"> -->
+          <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1>    <img class="logo" src="img/logo.png" alt="Logo"> </h1>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="location.html" class="nav-item nav-link">Location</a>
+                    <a href="future.html" class="nav-item nav-link">Events</a>
+                    <!-- <a href="" class="nav-item nav-link">Admin</a> -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            
+
+                            <a href="collection.html" class="dropdown-item ">Collection Schedule</a>
+                            <a href="recyclable.html" class="dropdown-item">Recyclable</a>
+                            <a href="complain.html" class="dropdown-item">Complain</a>
+                            <a href="rewards.html" class="dropdown-item">Rewards and incentive</a>
+                            <a href="community.html" class="dropdown-item ">Community</a>
+                            <a href="edu.html" class="dropdown-item active">Education</a>
+                            <a href="game.html" class="dropdown-item">Games</a>
+                            <a href="feedback.html" class="dropdown-item">Feedback</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+
+                            
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                <!-- <a href="" class="btn btn-secondary py-2 px-4 ms-3">Register</a> -->
+            </div>
+        </nav>
+
+        <!-- <div class="container-xxl py-5 bg-primary hero-header mb-5"> -->
+            <!-- <div class="container my-5 py-5 px-lg-5">
+                <div class="row g-5 pt-5">
+                    <div class="col-12 text-center text-lg-start"> -->
+                        <!-- <h1 class="display-4 text-black animated slideInLeft"> Schedule</h1> -->
+                        <!-- <h3>Towards Bettter Future</h3> -->
+                        <!-- <nav aria-label="breadcrumb"> -->
+                            <!-- <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
+                                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Domain</li>
+                            </ol> -->
+                        <!-- </nav>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+    <div class="team-footer">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+<body>
+    <div class="title">
+        <h1>Learn and Grow</h1>
+        <h3>Toward better future</h3>
+    </div>
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Grab Some Knowledge</h3>
+              <p>The 4R principle of waste management involves reducing, reusing, recycling, and recovering waste. These practices can help reduce waste, conserve resources, and minimize the environmental impact of waste disposal.</p>
+              <a href="#"> THE 4R's</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Grab some Knowledge</h3>
+              <p>Waste can be classified into organic( food, yard, and animal waste), inorganic(plastics, metals etc), and hazardous waste(chemicals, pesticides,) based on its composition and potential hazards.</p>
+              <a href="#">Types of Waste</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>03</h2>
+              <h3>Grab Some Knowledge</h3>
+              <p>Proper waste management is crucial for protecting the environment, public health, and conserving natural resources. It also generates economic benefits and promotes sustainability.
+              </p>
+              <a href="#">Importance</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+    <Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
